@@ -29,6 +29,8 @@ header {
   overflow: hidden;
   display: flex;
   align-items: baseline;
+  background-color: #244751;
+  color: #E8FDFF;
 }
 
 header > .login-info {
