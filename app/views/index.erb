@@ -35,9 +35,10 @@
             <span class="comment-count"><%= @finstagram_post_whale[:comment_count] %> comment</span>
         </div>
         <ul class="comments">
+            <% finstagram_post[:comments].each do |comment| %>
             <li>
                 <p>
-                    <%= @finstagram_post_whale[:comments][0][:username] %>: <%= @finstagram_post_whale[:comments][0][:text] %>
+                     <%= comment[:username] %>: <%= comment[:text] %>
                 </p>
             </li>
         </ul>
